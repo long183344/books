@@ -1,0 +1,30 @@
+# --- 操作系统 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- 编辑器 / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# --- 临时与备份 ---
+*.tmp
+*.bak
+*.orig
+~$*
+.trash/
+_local/
+
+# --- 导出产物 ---
+_export/
+*.pdf.tmp
+
+# --- 保留工作区数据，不要忽略 ---
+!.workbuddy/
