@@ -25,6 +25,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [02-窗口显示与绘图显示算子解析](./HALCON/02-窗口显示与绘图显示算子解析.md) | 显示/交互/绘图三线区分、window 管理、dev_set_* 环境、dev_disp_text 文本方框、draw_* 取 ROI、paint_* 固化进图 |
 | [章节总结/01-1D测量](./HALCON/章节总结/01-1D测量.md) | HALCON 官方手册第 1 章 18 个算子分成 6 大族（生成/提取/模糊/配置/平移/持久化）、measure_* vs fuzzy_measure_* 选型、典型闭环、量产 PCB 焊盘宽实战 |
 | [章节总结/02-2D测量](./HALCON/章节总结/02-2D测量.md) | HALCON 官方手册第 2 章 30 个算子（MetrologyHandle = "测量图纸"），5 种 add_object、对齐/求解、取结果、参数三层、桥接 1D 章、BGA 100 实例实战 |
+| [章节总结/03-3D匹配](./HALCON/章节总结/03-3D匹配.md) | HALCON 官方手册第 3 章 40 个算子（4 大族：3D Box / Deformable Surface / Shape-Based / Surface-Based），从 2D 跃进 3D，返回 6D 位姿，机器人抓取/Bin-Picking 主流族 |
 
 ---
 
