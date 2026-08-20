@@ -23,6 +23,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | --- | --- |
 | [01-圆形椭圆与圆弧算子解析](./HALCON/01-圆形椭圆与圆弧算子解析.md) | Region/XLD/几何三层、gen_circle 到 fit_*_contour_xld、gen_measure_arc 圆弧测量、实战与坑 |
 | [02-窗口显示与绘图显示算子解析](./HALCON/02-窗口显示与绘图显示算子解析.md) | 显示/交互/绘图三线区分、window 管理、dev_set_* 环境、dev_disp_text 文本方框、draw_* 取 ROI、paint_* 固化进图 |
+| [章节总结/01-1D测量](./HALCON/章节总结/01-1D测量.md) | HALCON 官方手册第 1 章 18 个算子分成 6 大族（生成/提取/模糊/配置/平移/持久化）、measure_* vs fuzzy_measure_* 选型、典型闭环、量产 PCB 焊盘宽实战 |
 
 ---
 
