@@ -27,6 +27,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/02-2D测量](./HALCON/章节总结/02-2D测量.md) | HALCON 官方手册第 2 章 30 个算子（MetrologyHandle = "测量图纸"），5 种 add_object、对齐/求解、取结果、参数三层、桥接 1D 章、BGA 100 实例实战 |
 | [章节总结/03-3D匹配](./HALCON/章节总结/03-3D匹配.md) | HALCON 官方手册第 3 章 40 个算子（4 大族：3D Box / Deformable Surface / Shape-Based / Surface-Based），从 2D 跃进 3D，返回 6D 位姿，机器人抓取/Bin-Picking 主流族 |
 | [章节总结/04-3D对象模型](./HALCON/章节总结/04-3D对象模型.md) | HALCON 官方手册第 4 章 52 个算子（4 大族：Creation / Features / Segmentation / Transformations），核心抽象 ObjectModel3D 句柄，造→量→拆→变 4 步流水线（附思维导图） |
+| [章节总结/05-3D重建](./HALCON/章节总结/05-3D重建.md) | HALCON 官方手册第 5 章 65 个算子（5 大族：Binocular Stereo / Depth From Focus / Multi-View / Photometric / Sheet Of Light），五种物理路径互补，从 2D 图像反推 3D 几何（附五角形思维导图） |
 
 ---
 

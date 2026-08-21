@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 4 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 5 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -72,6 +72,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 2 章 2D Metrology](./07-算法/HALCON/章节总结/02-2D测量.md) — 30 个算子拆成 7 大族、MetrologyHandle 是"测量图纸"、5 种 add_object、align/apply 流程、BGA 100 实例实战
 - [章节总结 · 第 3 章 3D Matching](./07-算法/HALCON/章节总结/03-3D匹配.md) — 40 个算子拆成 4 大族（3D Box / Deformable Surface / Shape-Based / Surface-Based）、从 2D 跃进 3D 返 6D 位姿、机器人抓取 / Bin-Picking 主流族
 - [章节总结 · 第 4 章 3D Object Model](./07-算法/HALCON/章节总结/04-3D对象模型.md) — 52 个算子拆成 4 大族（Creation / Features / Segmentation / Transformations），ObjectModel3D 句柄抽象、造量拆变 4 步流水线（附思维导图 PNG）
+- [章节总结 · 第 5 章 3D Reconstruction](./07-算法/HALCON/章节总结/05-3D重建.md) — 65 个算子拆成 5 大族（Binocular / Depth From Focus / Multi-View / Photometric / Sheet Of Light），5 种物理路径互补，从 2D 图像反推 3D 几何（附五角形思维导图 PNG）
 
 ---
 
