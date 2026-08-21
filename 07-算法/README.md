@@ -32,6 +32,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/07-分类](./HALCON/章节总结/07-分类.md) | HALCON 官方手册第 7 章 101 个算子（6 族：GMM / KNN / MLP / SVM / LUT / Misc），核心 4 分类器共享 5 件套模板（create → 样本 → train → classify → IO），LUT 烧成极速查表、ClassTrainData 跨族样本袋（附思维导图） |
 | [章节总结/08-控制](./HALCON/章节总结/08-控制.md) | HALCON 官方手册第 8 章 35 个 HDevelop 关键字（7 族：赋值/条件/循环/异常/过程·并行/元组↔向量/杂项），不是图像算子而是脚本语言级关键字，导出 C++/Python 后被翻译成目标语言原生控制流（附七边形思维导图） |
 | [章节总结/10-开发](./HALCON/章节总结/10-开发.md) | HALCON 官方手册第 10 章 42 个 `dev_*` 算子（8 族：窗口/绘图/文本·对话框/变量·内存/错误/更新/工具/系统·偏好），**只在 HDevelop IDE 或 HDevEngine 内部有效**——导出 C++/Python/.NET 后 17 失效、6 仅 HDevEngine、19 可移植（附八边形思维导图） |
+| [章节总结/11-文件](./HALCON/章节总结/11-文件.md) | HALCON 官方手册第 11 章 51 个 File I/O 算子（7 子族：Access/Images/Misc/Object/Region/Tuple/XLD），本章是**导出可移植性最高**的一章——51 个全部可在 C++/Python/.NET 外部调用；每对象都有"读写+序列化"四件套；DXF/ARC/INFO 是 CAD-GIS 桥梁（附七边形思维导图） |
 
 ---
 
