@@ -29,6 +29,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/04-3D对象模型](./HALCON/章节总结/04-3D对象模型.md) | HALCON 官方手册第 4 章 52 个算子（4 大族：Creation / Features / Segmentation / Transformations），核心抽象 ObjectModel3D 句柄，造→量→拆→变 4 步流水线（附思维导图） |
 | [章节总结/05-3D重建](./HALCON/章节总结/05-3D重建.md) | HALCON 官方手册第 5 章 65 个算子（5 大族：Binocular Stereo / Depth From Focus / Multi-View / Photometric / Sheet Of Light），五种物理路径互补，从 2D 图像反推 3D 几何（附五角形思维导图） |
 | [章节总结/06-标定](./HALCON/章节总结/06-标定.md) | HALCON 官方手册第 6 章 64 个算子（10 子族：Binocular / Calibration Object / Camera Parameters / Hand-Eye / Inverse Projection / Monocular / Multi-View / Projection / Rectification / Self-Calibration），三套 API 老 flat → 新 CalibData → 自标定，世界↔相机↔像素几何管的焊死步骤（附思维导图） |
+| [章节总结/07-分类](./HALCON/章节总结/07-分类.md) | HALCON 官方手册第 7 章 101 个算子（6 族：GMM / KNN / MLP / SVM / LUT / Misc），核心 4 分类器共享 5 件套模板（create → 样本 → train → classify → IO），LUT 烧成极速查表、ClassTrainData 跨族样本袋（附思维导图） |
 
 ---
 
