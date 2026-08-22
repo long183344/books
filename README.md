@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 16 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 17 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -85,6 +85,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 13 章 Graphics · 下卷](./07-算法/HALCON/章节总结/13-Graphics(下).md) — **窗口系统+输出 87 算子**（Output 16 + Parameters 38 + Text 12 + Window 21），`open_window` 创建窗口 + `set_color/draw/line_width/part` 配置样式 + `disp_image/region/xld/object_model_3d` 显示原语 + `convert_coordinates_*` 图像↔窗口坐标换算 + `dump_window` 导出 + 3D 窗口姿态（附四边形思维导图 PNG）
 - [章节总结 · 第 14 章 Identification](./07-算法/HALCON/章节总结/14-Identification.md) — **识别 44 算子**（Bar Code 一维条码 15 + Data Code 二维码 12 + Sample-Based 样本学习 17），图像→字符串/类别三范式：条码 (EAN/UPC/Code 128) / 二维码 (DM/QR/Aztec/PDF417) / 工业样本识别 (零件型号/缺陷等级)，全部"建模型→找→取"三段式（附三角辐射思维导图 PNG）
 - [章节总结 · 第 15 章 Image · 上卷](./07-算法/HALCON/章节总结/15-Image(上).md) — **图像的输入与组织 62 算子**（Access 读像素 9 + Acquisition 相机采集 14 + Channel 通道拆分合并 17 + Creation 造图 16 + Domain 域操作 6），`get_grayval/image_pointer` / `open_framegrabber` / `grab_image_async` / `compose3` / `decompose3` / `gen_image_const` / `reduce_domain` ——HALCON 的 ROI 工具是 `reduce_domain`，彩色图就是多通道（附五边形思维导图 PNG）
+- [章节总结 · 第 15 章 Image · 下卷](./07-算法/HALCON/章节总结/15-Image(下).md) — **图像的分析与变换 44 算子**（Features 特征统计熵 24 + Format 裁剪拼接 9 + Manipulation 像素改写 6 + Type Conversion 类型互换 5），`intensity/area_center_gray`/`entropy_gray`/`gen_cooc_matrix`/`fit_surface_*`/`select_gray`/`crop_part/rectangle2`/`tile_images`/`paint_region/xld`/`set_grayval`/`convert_image_type`/`complex_to_real`/`real_to_vector_field`（附四边形思维导图 PNG）
 
 ---
 
