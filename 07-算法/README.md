@@ -36,6 +36,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/12-滤波(上)](./HALCON/章节总结/12-滤波(上).md) | HALCON 官方手册第 12 章 **上卷** 41 个算子（3 族：Arithmetic 算术代数 / Bitwise 位运算 / Color 颜色空间），像素级独立计算——流水线最便宜的环节；三角函数 / Mult-Add / LUT / PCA 全部要点（附思维导图） |
 | [章节总结/12-滤波(中)](./HALCON/章节总结/12-滤波(中).md) | HALCON 官方手册第 12 章 **中卷** 87 个算子（7 族：Edges 边缘 23 + Enhancement 增强 7 + Inpainting 修补 6 + Geometric Transforms 几何变换 12 + FFT 频域 31 + Lines 直线 4 + Match 模板匹配 4），从像素级迈入邻域 + 空间重采样 + 频域滤波 + 直线 + 模板匹配；Canny/Sobel/DoG + 各扩散 + 各修补 + 各投影 + FFT + 模板匹配（附思维导图） |
 | [章节总结/12-滤波(下)](./HALCON/章节总结/12-滤波(下).md) | HALCON 官方手册第 12 章 **下卷** 59 个算子（8 族：Misc 杂项 8 + Smoothing 平滑 24 + Noise 噪声 5 + Wiener 复原 6 + Points 兴趣点 7 + OpticalFlow 光流 4 + SceneFlow 场景流 2 + Texture 纹理 3），空域平滑/保边去噪/数据增噪/Wiener 去卷积/Harris-Foerstner-Sojka/多网格光流/纹理度量（附思维导图） |
+| [章节总结/13-Graphics(上)](./HALCON/章节总结/13-Graphics(上).md) | HALCON 官方手册第 13 章 Graphics **上卷** 78 个算子（5 族：3D Scene 三维场景 20 + Drawing 鼠标绘图 23 + LUT 颜色查找表 3 + Mouse 鼠标输入 11 + Object 绘图对象 21），主动绘图与交互——画什么 + 怎么画 + 鼠标按键 + 可绑定窗口的可复用交互控件（附五边形思维导图） |
 
 ---
 
