@@ -38,6 +38,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/12-滤波(下)](./HALCON/章节总结/12-滤波(下).md) | HALCON 官方手册第 12 章 **下卷** 59 个算子（8 族：Misc 杂项 8 + Smoothing 平滑 24 + Noise 噪声 5 + Wiener 复原 6 + Points 兴趣点 7 + OpticalFlow 光流 4 + SceneFlow 场景流 2 + Texture 纹理 3），空域平滑/保边去噪/数据增噪/Wiener 去卷积/Harris-Foerstner-Sojka/多网格光流/纹理度量（附思维导图） |
 | [章节总结/13-Graphics(上)](./HALCON/章节总结/13-Graphics(上).md) | HALCON 官方手册第 13 章 Graphics **上卷** 78 个算子（5 族：3D Scene 三维场景 20 + Drawing 鼠标绘图 23 + LUT 颜色查找表 3 + Mouse 鼠标输入 11 + Object 绘图对象 21），主动绘图与交互——画什么 + 怎么画 + 鼠标按键 + 可绑定窗口的可复用交互控件（附五边形思维导图） |
 | [章节总结/13-Graphics(下)](./HALCON/章节总结/13-Graphics(下).md) | HALCON 官方手册第 13 章 Graphics **下卷** 87 个算子（4 族：Output 图形显示 16 + Parameters 绘制参数 38 + Text 文本绘制 12 + Window 窗口管理 21），窗口系统 + 输出——`open_window`+`set_*` 样式 + `disp_*`/`disp_text` 绘制 + `convert_coordinates_*` 坐标换算 + `dump_window` 导出 + 3D 窗口姿态（附四边形思维导图） |
+| [章节总结/14-Identification](./HALCON/章节总结/14-Identification.md) | HALCON 官方手册第 14 章 **识别** 44 个算子（3 族：Bar Code 一维条码 15 + Data Code 二维码 12 + Sample-Based 样本学习 17），把图像读成字符串或类别——条码 (EAN/UPC/Code 128) / 二维码 (DM/QR/Aztec/PDF417) / 工业样本识别 (零件型号/缺陷等级)，全部遵循"建模型→找→取"三段式（附三族辐射思维导图） |
 
 ---
 
