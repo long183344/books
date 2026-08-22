@@ -79,8 +79,8 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 10 章 Develop](./07-算法/HALCON/章节总结/10-开发.md) — 42 个 `dev_*` 算子分 8 族（窗口/绘图/文本/变量/错误/更新/工具/系统），**只在 HDevelop IDE 或 HDevEngine 内部生效**，导出后 17 失效、6 仅 HDevEngine、19 可移植（附八边形思维导图 PNG）
 - [章节总结 · 第 11 章 File I/O](./07-算法/HALCON/章节总结/11-文件.md) — **51 个算子导出可移植性最高的章节**（7 子族：Access/Images/Misc/Object/Region/Tuple/XLD），每对象"读写+序列化"四件套；DXF/ARC 是 CAD-GIS 桥梁；`read_*_serialized_item`/`fwrite_*` 是跨进程流（附七边形思维导图 PNG）
 - [章节总结 · 第 12 章 Filters · 上卷](./07-算法/HALCON/章节总结/12-滤波(上).md) — **像素级独立 41 算子**（Arithmetic 22 + Bit 8 + Color 11），三角函数 / Mult-Add / LUT / PCA 全部要点；流水线最便宜的环节（附思维导图 PNG）
-- [章节总结 · 第 12 章 Filters · 中卷](./07-算法/HALCON/章节总结/12-滤波(中).md) — **邻域+空间变换 48 算子**（Edges 23 + Enhancement 7 + Inpainting 6 + Geometric 12），从像素级迈入邻域 + 空间重采样；Canny/Prewitt/Sobel/LoG/DoG + 各种扩散 + 各种修补 + 各种投影（附思维导图 PNG）
-- [章节总结 · 第 12 章 Filters · 下卷](./07-算法/HALCON/章节总结/12-滤波(下).md) — **频域+空域+特征 98 算子**（FFT 31 + Smoothing 24 + Wiener 6 + Noise/Misc 13 + Points 7 + Lines 4 + Match 4 + OpticalFlow 4 + SceneFlow/Texture 5），FFT + Wiener 复原 + Harris/Foerstner + Hough 直线 + 模板匹配 + 光流（附思维导图 PNG）
+- [章节总结 · 第 12 章 Filters · 中卷](./07-算法/HALCON/章节总结/12-滤波(中).md) — **邻域+空间+频域+直线+匹配 87 算子**（Edges 23 + Enhancement 7 + Inpainting 6 + Geometric 12 + FFT 31 + Lines 4 + Match 4），从像素级迈入邻域 + 空间重采样 + 频域滤波；Canny/Sobel/DoG + 各扩散 + 各修补 + 各投影 + FFT + 模板匹配（附思维导图 PNG）
+- [章节总结 · 第 12 章 Filters · 下卷](./07-算法/HALCON/章节总结/12-滤波(下).md) — **空域+噪声+反卷积+特征+光流+纹理 59 算子**（Misc 8 + Smoothing 24 + Noise 5 + Wiener 6 + Points 7 + OpticalFlow 4 + SceneFlow 2 + Texture 3），Wiener 复原 + Harris/Foerstner/Lepetit + 多网格光流 + 场景流 + 纹理度量（附思维导图 PNG）
 
 ---
 
