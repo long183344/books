@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 24 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 25 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -93,6 +93,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 20 章 OCR · 上卷](./07-算法/HALCON/章节总结/20-OCR(上).md) — **OCR 识别核心 33 算子**（Deep OCR 端到端深度引擎 6 + Segmentation 文本检测与字符切分 12 + Lexica 词典与拼写纠错 6 + CNN Classifier 字符分类器 9），「从图到字」的识别核心四件套——`create_deep_ocr`+`apply_deep_ocr` 一键搞定通用场景；传统四步走（`create_text_model_reader`→`find_text`→`segment_characters`→`do_ocr_*_class_cnn`）精控专业场景；`lookup_lexicon`+`suggest_lexicon` 词典后处理永远加分（附四方辐射美学思维导图 PNG）
 - [章节总结 · 第 21 章 Object](./07-算法/HALCON/章节总结/21-Object.md) — **Iconic Object 元组管理 16 算子**（Information 信息查询 5 + Manipulation 操作管理 11），HALCON 的"元组管家用具箱"——5 个只读看（`count_obj`/`get_obj_class`/`compare_obj`/`test_equal_obj`/`get_channel_info`）+ 11 个结构化改（`select_obj`/`concat_obj`/`copy_obj`/`insert_obj`/`remove_obj`/`replace_obj`/`obj_diff`/`clear_obj`/`gen_empty_obj`/`obj_to_integer`/`integer_to_obj`），所有操作严格遵循集合论语义（附双子星辐射思维导图 PNG）
 - [章节总结 · 第 22 章 Regions · 上卷](./07-算法/HALCON/章节总结/22-Regions(上).md) — **二值区域基础四件套 35 算子**（Access 查询 5 + Creation 创建 21 + Sets 集合论 6 + Tests 断言 3），HALCON 二值掩模「看、造、算、判」——`get_region_points/runs/polygon/convex/contour` 解码 Region 为坐标 / 轮廓 / 凸包 / 多边形 / 行程；`gen_circle/ellipse/rectangle1/rectangle2/gen_region_polygon_filled/gen_random_regions/...` 凭空造几何；`union1/union2/intersection/difference/symm_difference/complement` 集合论；`test_equal_region/test_subset_region/test_region_point` 断言（附四角辐射思维导图 PNG）
+- [章节总结 · 第 22 章 Regions · 中卷](./07-算法/HALCON/章节总结/22-Regions(中).md) — **区域测量全 41 算子**（Features 单族 7 主题：基础测量 8 + 内接外接 5 + 形状因子 7 + 矩与不变量 7 + 行程与厚度 4 + 距离与邻域 6 + 特征选择器 4），HALCON 视觉流水线"特征工程中心"——`area_center`/`smallest_rectangle2`/`elliptic_axis`/`moments_region_*_invar`（Hu 7 维不变矩指纹）/`get_region_thickness`/`hamming_distance`/`select_shape_std` 批量筛选；是分割之后、匹配之前、Ch16 工业检测的算力底座（附七瓣辐射美学思维导图 PNG）
 
 ---
 
