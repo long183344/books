@@ -42,6 +42,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/15-Image(上)](./HALCON/章节总结/15-Image(上).md) | HALCON 官方手册第 15 章 Image **上卷** 62 个算子（5 族：Access 像素访问 9 + Acquisition 相机采集 14 + Channel 通道拆分合并 17 + Creation 造图 16 + Domain 域操作 6），图像的"输入与组织"五件套——看图/取图/拼通道/造图/设 ROI；`reduce_domain` 是 HALCON 的 ROI 工具，`compose/decompose2..7` 处理彩色图通道（附五边形思维导图） |
 | [章节总结/15-Image(下)](./HALCON/章节总结/15-Image(下).md) | HALCON 官方手册第 15 章 Image **下卷** 44 个算子（4 族：Features 特征/统计/熵 24 + Format 裁剪拼接 9 + Manipulation 像素改写 6 + Type Conversion 类型互换 5），图像的"分析与变换"四件套——`area_center_gray/intensity/entropy_gray/gen_cooc_matrix` 算特征 + `crop_part/crop_rectangle2/tile_images` 裁拼 + `paint_region/xld`/`overpaint_*`/`set_grayval` 改写 + `convert_image_type/complex_to_real/real_to_vector_field` 换类型（附四边形思维导图） |
 | [章节总结/16-Inspection](./HALCON/章节总结/16-Inspection.md) | HALCON 官方手册第 16 章 **检测** 53 个算子（5 族：Bead Inspection 胶路检测 5 + OCV 光学字符校验 8 + Structured Light 结构光 11 + Texture Inspection 纹理检测 15 + Variation Model 差异模型 14），工业质检"五朵金花"——胶路宽窄/字符对错/结构光解码/纹理瑕疵/与金标准图逐像素比对，全部"训练→检测→出结果"三段式（附五瓣金花美学思维导图） |
+| [章节总结/17-Matching(上)](./HALCON/章节总结/17-Matching(上).md) | HALCON 官方手册第 17 章 Matching **上卷** 65 个算子（3 族：Correlation-Based NCC 14 + Shape-Based 28 + Deformable 23），**经典模板匹配**——"图像本身就是模板，像素或轮廓是匹配依据"；`create_*_model` → `find_*_model` → `clear_*_model` 三件套共享；Shape 抗旋转+缩放、Deformable 还抗局部形变（附三角辐射思维导图） |
 
 ---
 
