@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 26 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 27 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -95,6 +95,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 22 章 Regions · 上卷](./07-算法/HALCON/章节总结/22-Regions(上).md) — **二值区域基础四件套 35 算子**（Access 查询 5 + Creation 创建 21 + Sets 集合论 6 + Tests 断言 3），HALCON 二值掩模「看、造、算、判」——`get_region_points/runs/polygon/convex/contour` 解码 Region 为坐标 / 轮廓 / 凸包 / 多边形 / 行程；`gen_circle/ellipse/rectangle1/rectangle2/gen_region_polygon_filled/gen_random_regions/...` 凭空造几何；`union1/union2/intersection/difference/symm_difference/complement` 集合论；`test_equal_region/test_subset_region/test_region_point` 断言（附四角辐射思维导图 PNG）
 - [章节总结 · 第 22 章 Regions · 中卷](./07-算法/HALCON/章节总结/22-Regions(中).md) — **区域测量全 41 算子**（Features 单族 7 主题：基础测量 8 + 内接外接 5 + 形状因子 7 + 矩与不变量 7 + 行程与厚度 4 + 距离与邻域 6 + 特征选择器 4），HALCON 视觉流水线"特征工程中心"——`area_center`/`smallest_rectangle2`/`elliptic_axis`/`moments_region_*_invar`（Hu 7 维不变矩指纹）/`get_region_thickness`/`hamming_distance`/`select_shape_std` 批量筛选；是分割之后、匹配之前、Ch16 工业检测的算力底座（附七瓣辐射美学思维导图 PNG）
 - [章节总结 · 第 22 章 Regions · 下卷](./07-算法/HALCON/章节总结/22-Regions(下).md) — **区域几何与形状变换 29 算子收官**（Geometric 几何 8 + Transformations 变换 21，细分 6 主题：几何变换/骨架中轴/区域修复/区域重塑/距离分割/裁剪拆分），「把区域换个姿势」——`affine_trans_region` 仿射瑞士军刀（HomMat2D 右乘组合拳）、`polar_trans_region` 环形展开神器（瓶盖/密封圈圆变方）、`connection` Top3 高频算子、`skeleton+junctions_skeleton+split_skeleton_*` 线网络四件套、`fill_up_shape` 选择性填孔、`sort_region('character')` OCR 排队、`distance_transform` 距离场引擎；全章上中下 35+41+29=**104 算子**完整体系（附六角辐射美学思维导图 PNG）
+- [章节总结 · 第 23 章 Segmentation](./07-算法/HALCON/章节总结/23-Segmentation.md) — **图像分割 6 子族 53 算子**（像素分类 13 + 边缘检测 4 + MSER 极值稳定区域 1 + 区域生长 5 + 阈值分割 16 + 地形学 14），「把图里目标"抠"出来」的 6 套武器——`binary_threshold`(Otsu 默认)/`dyn_threshold`(不均匀光照黄金搭配)/`local_threshold`(Sauvola 字符)/`var_threshold`(金属纹理)/`watersheds_marker`(粘连分离可控版)/`segment_image_mser`(自然场景文字定位)/`regiongrowing`(种子扩散扫一遍出全图)/`local_max_sub_pix`(亚像素特征点)；Ch20下管训练/本卷管推理的 HALCON 经典设计；上游 Ch11 图像预处理 → 本卷分割 → 下游 Ch22 Regions/Ch20 OCR/Ch25 标定（附六角辐射美学思维导图 PNG）
 
 ---
 
