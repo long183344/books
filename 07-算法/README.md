@@ -43,6 +43,7 @@ HALCON 模板匹配 / 亚像素   ← 待补
 | [章节总结/15-Image(下)](./HALCON/章节总结/15-Image(下).md) | HALCON 官方手册第 15 章 Image **下卷** 44 个算子（4 族：Features 特征/统计/熵 24 + Format 裁剪拼接 9 + Manipulation 像素改写 6 + Type Conversion 类型互换 5），图像的"分析与变换"四件套——`area_center_gray/intensity/entropy_gray/gen_cooc_matrix` 算特征 + `crop_part/crop_rectangle2/tile_images` 裁拼 + `paint_region/xld`/`overpaint_*`/`set_grayval` 改写 + `convert_image_type/complex_to_real/real_to_vector_field` 换类型（附四边形思维导图） |
 | [章节总结/16-Inspection](./HALCON/章节总结/16-Inspection.md) | HALCON 官方手册第 16 章 **检测** 53 个算子（5 族：Bead Inspection 胶路检测 5 + OCV 光学字符校验 8 + Structured Light 结构光 11 + Texture Inspection 纹理检测 15 + Variation Model 差异模型 14），工业质检"五朵金花"——胶路宽窄/字符对错/结构光解码/纹理瑕疵/与金标准图逐像素比对，全部"训练→检测→出结果"三段式（附五瓣金花美学思维导图） |
 | [章节总结/17-Matching(上)](./HALCON/章节总结/17-Matching(上).md) | HALCON 官方手册第 17 章 Matching **上卷** 65 个算子（3 族：Correlation-Based NCC 14 + Shape-Based 28 + Deformable 23），**经典模板匹配**——"图像本身就是模板，像素或轮廓是匹配依据"；`create_*_model` → `find_*_model` → `clear_*_model` 三件套共享；Shape 抗旋转+缩放、Deformable 还抗局部形变（附三角辐射思维导图） |
+| [章节总结/18-Matrix](./HALCON/章节总结/18-Matrix.md) | HALCON 官方手册第 18 章 Matrix **矩阵运算** 57 个算子（7 族：Access 8 + Arithmetic 27 + Creation 4 + Decomposition 3 + Eigenvalues 4 + Features 7 + File 4），HALCON 内部"线性代数底座"——`create_matrix` 起步、`get/set_*_matrix` 读写、`mult/add/sub/pow_*_matrix[_mod]` 算 + 12 对原地版省内存 50%、`solve_matrix`/`svd_matrix`/`invert_matrix`/`eigenvalues_*` 四大线性代数引擎，是相机标定/位姿估计/PCA 的数学根基（附七星连珠美学思维导图） |
 
 ---
 

@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 19 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 20 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -88,6 +88,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 15 章 Image · 下卷](./07-算法/HALCON/章节总结/15-Image(下).md) — **图像的分析与变换 44 算子**（Features 特征统计熵 24 + Format 裁剪拼接 9 + Manipulation 像素改写 6 + Type Conversion 类型互换 5），`intensity/area_center_gray`/`entropy_gray`/`gen_cooc_matrix`/`fit_surface_*`/`select_gray`/`crop_part/rectangle2`/`tile_images`/`paint_region/xld`/`set_grayval`/`convert_image_type`/`complex_to_real`/`real_to_vector_field`（附四边形思维导图 PNG）
 - [章节总结 · 第 16 章 Inspection](./07-算法/HALCON/章节总结/16-Inspection.md) — **工业检测五朵金花 53 算子**（Bead Inspection 胶路检测 5 + OCV 光学字符校验 8 + Structured Light 结构光 11 + Texture Inspection 纹理检测 15 + Variation Model 差异模型 14），胶路宽窄/字符对错/结构光解码/纹理瑕疵/与金标准图逐像素比对，全部"训练→检测→出结果"三段式；`create_variation_model`+`prepare_variation_model`+`compare_variation_model` 是零标注缺陷检测的利器（附五瓣金花美学思维导图 PNG）
 - [章节总结 · 第 17 章 Matching · 上卷](./07-算法/HALCON/章节总结/17-Matching(上).md) — **经典模板匹配 65 算子**（Correlation-Based NCC 像素灰度块 14 + Shape-Based 轮廓金字塔 28 + Deformable 可形变网格 23），"图像本身就是模板，像素或轮廓是匹配依据"；`create_*_model → find_*_model → clear_*_model` 三件套共享；Shape 抗旋转+缩放，Deformable 还抗局部形变（calib 版返回 6D Pose 给机器人抓取）（附三角辐射思维导图 PNG）
+- [章节总结 · 第 18 章 Matrix](./07-算法/HALCON/章节总结/18-Matrix.md) — **矩阵运算七色花 57 算子**（Access 取值赋值 8 + Arithmetic 算术运算 27 含 12 对 `_mod` 原地版 + Creation 矩阵构造 4 + Decomposition 矩阵分解 LU/QR/SVD 3 + Eigenvalues 特征值 4 + Features 行列式/均值/范数 7 + File 读写序列化 4），HALCON 高级算法（相机标定/位姿估计/PCA）的数学底座；`solve_matrix('LU')` 解线性方程组、`svd_matrix` 算伪逆、`invert_matrix` 求逆、`get_full/set_full_matrix` 是矩阵 ↔ tuple 互转的基座（附七星连珠美学思维导图 PNG）
 
 ---
 
