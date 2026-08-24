@@ -15,7 +15,7 @@
 | [04](./04-网络与安全/) | 网络与安全 | 协议栈、加密、攻防、运维 | 🌱 待填充 |
 | [05](./05-数据与AI/) | 数据与 AI | 数据工程、模型原理、推理部署 | 🌱 待填充 |
 | [06](./06-工具与效率/) | 工具与效率 | 命令行、编辑器、自动化流程 | 🌱 待填充 |
-| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 28 篇） |
+| [07](./07-算法/) | 算法 | HALCON 算子、机器视觉、数值方法 | ✅ 已起步（HALCON 2 篇 + 章节总结 29 篇） |
 | [99](./99-速记与灵感/) | 速记与灵感 | 未成型的碎片，定期归档到上面的分类 | 🌱 待填充 |
 | [_模板](./_模板/) | 模板 | 新建笔记时复制这个 | ✅ |
 
@@ -98,6 +98,7 @@ CPU ──── 算什么、怎么算得快
 - [章节总结 · 第 23 章 Segmentation](./07-算法/HALCON/章节总结/23-Segmentation.md) — **图像分割 6 子族 53 算子**（像素分类 13 + 边缘检测 4 + MSER 极值稳定区域 1 + 区域生长 5 + 阈值分割 16 + 地形学 14），「把图里目标"抠"出来」的 6 套武器——`binary_threshold`(Otsu 默认)/`dyn_threshold`(不均匀光照黄金搭配)/`local_threshold`(Sauvola 字符)/`var_threshold`(金属纹理)/`watersheds_marker`(粘连分离可控版)/`segment_image_mser`(自然场景文字定位)/`regiongrowing`(种子扩散扫一遍出全图)/`local_max_sub_pix`(亚像素特征点)；Ch20下管训练/本卷管推理的 HALCON 经典设计；上游 Ch11 图像预处理 → 本卷分割 → 下游 Ch22 Regions/Ch20 OCR/Ch25 标定（附六角辐射美学思维导图 PNG）
 - [章节总结 · 第 24 章 System · 上卷](./07-算法/HALCON/章节总结/24-System(上).md) — **本地系统资源 5 子族 47 算子**（计算设备 11 + 数据库 3 + 错误处理 7 + I/O 设备 15 + 元信息 11），HALCON 的"系统调用层"——`activate_compute_device` GPU 加速 4 步套路（query→open→init→activate 顺序不可乱）、`set_check('none'/'input'/'all')` 三档检查模式（生产永远 'none' 提速 5~30%）、`get_extended_error_info` HDevelop `catch` 块主战武器、`read_io_channel` + `write_io_channel` 工业 PLC 5 步触发拍照（Modbus/OPC UA/EtherNet/IP 三层架构 Interface→Device→Channel）、`get_operator_name` + `search_operator` + `get_param_info` 反射元数据是 HDevelop IDE/代码生成/ML 选算子底座（附五角辐射美学思维导图 PNG）
 - [章节总结 · 第 24 章 System · 中卷](./07-算法/HALCON/章节总结/24-System(中).md) — **CPU 并行与算子控制 4 子族 52 算子**（Multithreading 多线程 38 + Operating System 操作系统 4 + Parallelization 自动算子并行化 AOP 6 + Parameters 算子超时控制 4），HALCON 的"用满 CPU 跑完不超时"基础设施——`lock_mutex`/`signal_condition`/`enqueue_message` 多线程三大原语 + `wait_condition`"释放 mutex+阻塞+重锁"三步原子 + `barrier` 三方同步（`create_barrier(..., TeamSize=3)` 三相机同时通过） + `set_system('parallelize_operators','true')` 全局 + `set_aop_info` 单算子双开关 AOP 部署（`optimize_aop`/`read_aop_knowledge`/`write_aop_knowledge` 5 步法固化离线评测） + `set_operator_timeout` 算子熔断器（与上卷 `set_check` 不同：`set_check` 校验参数 vs `set_operator_timeout` 熔断运行时） + `system_call` 调外部 shell（慎用，会阻塞主线程）；生产部署 5 大铁律（IDE 关 / 无算子窗口 / `set_system('parallelize_operators','true')` / `optimize_aop` 已固化 / `read_aop_knowledge` 已加载）（附四角辐射美学思维导图 PNG）
+- [章节总结 · 第 24 章 System · 下卷](./07-算法/HALCON/章节总结/24-System(下).md) — **分布式系统篇 4 子族 36 算子**（Parameters 算子超时控制 4 + Serial RS-232 串口 7 + SerializedItem 序列化项 5 + Sockets TCP/UDP 套接字 20），HALCON 的'对外通信四件套'——`socket_accept_connect('accept','IP',PORT,'TCP',30)` 3 合 1 超级 socket （取代 `open_socket_accept/connect` 两个的合并版） + `set_socket_param('TCP_NODELAY','true')` 关 Nagle 解决粘包 + `send_image/receive_image` 图像联网同步 + `send_serialized_item`/`fwrite_serialized_item` 模型跨机持久化传送 + `create_serialized_item_ptr` C/C++ 互操作（外部 byte[] 转 HALCON 句柄） + `set_serial_param(SH, 115200, 8, 'none', 'none', 1, 1000, 50)` 工业 RS-232 串口 7 参数（波特率/数据位/流控/奇偶/停止位/超时/字符间超时）+ `set_operator_timeout('*', 3, 'cancel')` 全局算子熔断器（生产产线网络抖动救星）+ `get_serialized_item_ptr` 拿底层指针接入 OpenCV；全章 12 子族 133 算子全部收官（上中下 47 + 52 + 36）（附四角非平衡美学思维导图，右下大卡 Sockets 网络套接字）
 
 ---
 
