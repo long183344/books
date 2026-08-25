@@ -97,12 +97,12 @@
 | 26 | 下卷 Transformations | 40 | 4 | 907c009 | 3D 位姿数学（Poses 19 + Quat 9 + DualQuat 10 + Misc 2），四角辐射思维导图 |
 | 27 | 上卷 Tuple | 63 | 3 | e2b71f9 | 元组数值算子基座（Arithmetic 45 + Bit 6 + Comparison 12），三角辐射思维导图 |
 | 27 | 中卷 Tuple | 47 | 7 | 36fdb16 | 元组数据处理车间（Conversion 12 + Creation 5 + Containers 10 + ElementOrder 2 + Features 11 + Logical 4 + Manipulation 3），七瓣辐射思维导图 |
+| 27 | 下卷 Tuple | 43 | 4 | 99ff87b | 元组从数据到应用的最后一公里（Selection 11 + Sets 4 + StringOperations 14 + Type 14），四角辐射思维导图，全章 154 ops 收官 |
 
 ## 待完成的章节
-- Ch27 下卷（Selection 11 + Sets 4 + StringOperations 15 + Type 14 = 44 ops）
 - Ch17 Matching 下卷（Component-Based 24 + Descriptor-Based 15 = 39 ops）
 - Ch20 OCR 下卷（MLP 20 + SVM 19 + KNN 13 + Training Files 9 = 61 ops）
-- 后续章节：Ch27+ 待确认
+- Ch27 后续：CH27 全章已收官，Ch28+ 待确认
 
 ## Python 环境
 - 系统 Python：`C:\Users\Administrator\.workbuddy\binaries\python\versions\3.13.12\python.exe`
