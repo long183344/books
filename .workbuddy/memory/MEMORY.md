@@ -90,13 +90,15 @@
 | 23 | 单卷 Segmentation | 53 | 6 | 73ac0f9 | 6 套分割武器 |
 | 24 | 上/中/下 三卷 | 47+52+36=135 | 5+4+4 | 1a99b88, bb2e80c, a458ece | 系统资源全栈（含 Sockets）|
 | 25 | 上卷 Tools | 32 | 2 | b7365d4 | 数学小工具箱（背景估计+1D 函数）|
+| 25 | 中卷 Tools | 42 | 5 | a16a9b0 | Geometry 5 主题（距离变换+测距+角度投影+求交+面积）|
+| 25 | 下卷 Tools | 29 | 5 | 2a9afce | Grid Rect + Hough + Interpolation + Lines + Mosaicking 全章收官 |
+| 26 | 上卷 Transformations | 51 | 2 | b6e4334 | 齐次矩阵决策库（2D 32 + 3D 19）|
 
 ## 待完成的章节
 - Ch17 Matching 下卷（Component-Based 24 + Descriptor-Based 15 = 39 ops）
 - Ch20 OCR 下卷（MLP 20 + SVM 19 + KNN 13 + Training Files 9 = 61 ops）
-- Ch25 Tools 中卷（Geometry 42 ops）
-- Ch25 Tools 下卷（Grid Rect 5 + Hough 7 + Interpolation 5 + Lines 2 + Mosaicking 10 = 29 ops）
-- 后续章节：Ch26+ 待确认
+- Ch26 下卷 Dual Quaternions(10) + Misc(2) + Poses(19) + Quaternions(9) = 40 ops
+- 后续章节：Ch27+ 待确认
 
 ## Python 环境
 - 系统 Python：`C:\Users\Administrator\.workbuddy\binaries\python\versions\3.13.12\python.exe`
