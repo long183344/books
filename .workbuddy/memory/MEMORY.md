@@ -93,11 +93,13 @@
 | 25 | 中卷 Tools | 42 | 5 | a16a9b0 | Geometry 5 主题（距离变换+测距+角度投影+求交+面积）|
 | 25 | 下卷 Tools | 29 | 5 | 2a9afce | Grid Rect + Hough + Interpolation + Lines + Mosaicking 全章收官 |
 | 26 | 上卷 Transformations | 51 | 2 | b6e4334 | 齐次矩阵决策库（2D 32 + 3D 19）|
+| 26 | 下卷 Transformations | 40 | 4 | 907c009 | 3D 位姿数学（Poses 19 + Quat 9 + DualQuat 10 + Misc 2），四角辐射思维导图 |
+| 27 | 上卷 Tuple | 63 | 3 | e2b71f9 | 元组数值算子基座（Arithmetic 45 + Bit 6 + Comparison 12），三角辐射思维导图 |
 
 ## 待完成的章节
+- Ch27 下卷（Containers 10 + Conversion 12 + Creation 5 + ElementOrder 2 + Features 11 + LogicalOperations 4 + Manipulation 3 + Selection 11 + Sets 4 + StringOperations 15 + Type 14 = 91 ops）
 - Ch17 Matching 下卷（Component-Based 24 + Descriptor-Based 15 = 39 ops）
 - Ch20 OCR 下卷（MLP 20 + SVM 19 + KNN 13 + Training Files 9 = 61 ops）
-- Ch26 下卷 Dual Quaternions(10) + Misc(2) + Poses(19) + Quaternions(9) = 40 ops
 - 后续章节：Ch27+ 待确认
 
 ## Python 环境
