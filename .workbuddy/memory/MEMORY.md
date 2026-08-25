@@ -53,6 +53,7 @@
   - 双子：双子星（左上 + 右上 + 中心）
   - 三角 / 四角 / 五瓣 / 六瓣辐射 / 七瓣辐射
 - **防重叠技巧**：7 张子卡均匀 360°/7 时，若用大椭圆作标题条会与正上/正下的卡片重叠。**改用纯背景圆 + 左下/右下角图例区**
+  - **真正彻底的版本**：用 `fig.add_axes([...])` 仅设中心辐射区；图例/标题/副标题用 `fig.text()` 和 `fig.patches.append()` 在 figure 层级渲染，避开 axes 范围裁切。
 - 配色：中心深蓝、每族独立主题色（橙/青/紫/红/绿）
 - 中文字体：SimHei (`C:\Windows\Fonts\simhei.ttf`)
 
@@ -95,9 +96,10 @@
 | 26 | 上卷 Transformations | 51 | 2 | b6e4334 | 齐次矩阵决策库（2D 32 + 3D 19）|
 | 26 | 下卷 Transformations | 40 | 4 | 907c009 | 3D 位姿数学（Poses 19 + Quat 9 + DualQuat 10 + Misc 2），四角辐射思维导图 |
 | 27 | 上卷 Tuple | 63 | 3 | e2b71f9 | 元组数值算子基座（Arithmetic 45 + Bit 6 + Comparison 12），三角辐射思维导图 |
+| 27 | 中卷 Tuple | 47 | 7 | 36fdb16 | 元组数据处理车间（Conversion 12 + Creation 5 + Containers 10 + ElementOrder 2 + Features 11 + Logical 4 + Manipulation 3），七瓣辐射思维导图 |
 
 ## 待完成的章节
-- Ch27 下卷（Containers 10 + Conversion 12 + Creation 5 + ElementOrder 2 + Features 11 + LogicalOperations 4 + Manipulation 3 + Selection 11 + Sets 4 + StringOperations 15 + Type 14 = 91 ops）
+- Ch27 下卷（Selection 11 + Sets 4 + StringOperations 15 + Type 14 = 44 ops）
 - Ch17 Matching 下卷（Component-Based 24 + Descriptor-Based 15 = 39 ops）
 - Ch20 OCR 下卷（MLP 20 + SVM 19 + KNN 13 + Training Files 9 = 61 ops）
 - 后续章节：Ch27+ 待确认
