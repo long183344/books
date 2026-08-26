@@ -98,11 +98,25 @@
 | 27 | 上卷 Tuple | 63 | 3 | e2b71f9 | 元组数值算子基座（Arithmetic 45 + Bit 6 + Comparison 12），三角辐射思维导图 |
 | 27 | 中卷 Tuple | 47 | 7 | 36fdb16 | 元组数据处理车间（Conversion 12 + Creation 5 + Containers 10 + ElementOrder 2 + Features 11 + Logical 4 + Manipulation 3），七瓣辐射思维导图 |
 | 27 | 下卷 Tuple | 43 | 4 | 99ff87b | 元组从数据到应用的最后一公里（Selection 11 + Sets 4 + StringOperations 14 + Type 14），四角辐射思维导图，全章 154 ops 收官 |
+| 28 | 上卷 XLD | 61 | 3 | 1fe3f28 | 把像素升级为带属性+带方向的曲线——XLD 完整数据底座（Access 4 + Creation 12 + Features 45），三角辐射思维导图（蓝/橙/绿），6 重点算子(gen_contour_polygon/gen_parallels/fit_circle/fit_line/area_center/smallest_rectangle2)+ 3 段 HDevelop pipeline |
 
 ## 待完成的章节
 - Ch17 Matching 下卷（Component-Based 24 + Descriptor-Based 15 = 39 ops）
 - Ch20 OCR 下卷（MLP 20 + SVM 19 + KNN 13 + Training Files 9 = 61 ops）
-- Ch27 后续：CH27 全章已收官，Ch28+ 待确认
+- Ch28 中卷：Sets(8) + Transformations(20) = 28 ops
+- Ch28 下卷：Geometric Transformations(5 ops)
+- Ch29+ 待确认
+
+## HTML 抽取策略 v2（Ch28 修正）
+- **无 lead div**：HALCON 早期章节 HTML 没有 `<div class="lead" id="lead">`，找 Signature h2 必须用全文扫描 `<h2 id="sec_synopsis">`
+- **多语言 div**：Signature 块含 `data-if="hdevelop"/"c"/"cpp"/"dotnet"/"python"` 的并列 div，首段（HDevelop）才有完整简洁签名
+- **toc 正则**：`select_xld_point` / `test_xld_point` 等用 `_point.html` / `_contours.html` 后缀，默认 `[a-z_]+_xld\.html` 正则会漏 → 用 `([a-zA-Z_0-9]+_xld(?:_point|_contours)?\.html)`
+
+## 思维导图 v2 关键修正
+- **绝对避免** `fig.patches.append(Circle/FancyBboxPatch/FancyArrowPatch)` —— fig 级 patches 不被 matplotlib 绘制
+- 正确做法：`ax.add_patch(...)` + `ax.text(...)` 全部走 axes 层级
+- 主标题/脚标/副标题 用 `fig.text()` 不被 axes 范围裁切
+- 三族错开防遮挡：Access 右上 + Creation 右下 + Features 左下，中心 XLD 圆半径 ≤ 1.1
 
 ## Python 环境
 - 系统 Python：`C:\Users\Administrator\.workbuddy\binaries\python\versions\3.13.12\python.exe`
