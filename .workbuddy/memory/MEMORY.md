@@ -64,6 +64,9 @@
 - 提交信息格式：`docs(halcon-chNN-XXX): 第 NN 章 ...`
 - `.workbuddy/memory/YYYY-MM-DD.md` 必须 add（保留工作区数据约定）
 
+## 可复用技能
+- `halcon-master`（用户级 ~/.workbuddy/skills/halcon-master/，打包 halcon-master.zip 26KB）——把本项目积累的文档阅读/算子抽取/分类目录/HDevelop 语言经验/算法 pipeline 全部封装为技能。新会话遇 HALCON 相关问题自动触发。包含 SKILL.md + 7 references + 3 scripts（parse_toc / extract_operators / build_mindmap）。
+
 ## 已完成的章节
 | Ch | 卷 | 算子数 | 子族数 | commit | 关键特色 |
 |---|---|---|---|---|---|
