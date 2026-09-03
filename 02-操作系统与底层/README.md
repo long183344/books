@@ -2,6 +2,14 @@
 
 > 硬件之上的第一层抽象。硬件笔记里那些「CPU 有几个核」「缓存多大」，最终都要靠这一层调度出来才有意义。
 
+## 已收录主题
+
+### Windows 崩溃诊断（BlueScreenView / Minidump 实战）
+
+- [01 · BlueScreenView 加载 Minidump 分析蓝屏崩溃日志](./Windows崩溃诊断/01-BlueScreenView蓝屏崩溃日志分析.md) — 工具原理（地址→驱动映射、无需符号）、5 种转储类型对照、加载 `C:\Windows\Minidump` 的详细步骤、命令行批量导出、8 步蓝屏原因检测法、STOP 代码速查表、3 个实战案例、6 条常见误区
+
+---
+
 ## 规划中的主题
 
 - [ ] 进程与线程：调度器、上下文切换成本、大小核调度（与 [CPU 前沿技术](../01-计算机硬件/CPU/03-CPU前沿技术.md) 的 Thread Director 呼应）
