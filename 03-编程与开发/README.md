@@ -5,6 +5,7 @@
 ## 已收录主题
 
 - [Web 前后端通信 · 01 · HTML 前后端通信详解](./Web前后端通信/01-HTML前后端通信详解.md) — 从 jQuery `$.post` vs `$.ajax` 两段真实代码对比出发，扩展到表单 / Fetch / Axios / WebSocket 全通信技术、HTTP 基础、Content-Type、跨域 CORS、认证安全、前后端分离与现代重写
+- [云开发 CloudBase · 01 · CloudBase 开发部署详解](./云开发CloudBase/01-CloudBase开发部署详解.md) — 源自本地店 AI 自动化方案，详解云函数 / 云数据库 / 云存储 / 定时触发器 / 云接入 / 微信云调用，含完整 CLI 部署流水线与三大服务落地映射
 
 ## 规划中的主题
 
