@@ -2,6 +2,10 @@
 
 > 数据工程 + 模型原理 + 推理部署。
 
+## 已收录文档
+
+- [MySQL 8.4 远程连接与认证机制详解](./MySQL8.4远程连接与认证机制详解.docx) — 远程连接配置、用户授权、caching_sha2_password / mysql_native_password 认证机制、ssl-mode 与连接排错
+
 ## 规划中的主题
 
 - [ ] 数据管道：批处理 vs 流处理
